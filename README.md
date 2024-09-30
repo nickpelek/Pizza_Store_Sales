@@ -12,10 +12,13 @@ Insights and recommendations will be provided by answering some key questions, s
 - Can we indentify any seasonality in revenue?
 
 
-##Table of contents
+## Table of contents
 -
 -
 -
 -
 
-## Data Structure
+## Tools used
+- **MS Excel** (*Data exploring - Formatting*)
+- **MySQL workbench** (*Data Analysis*)
+- **Tableau Public** (*Creating Reports*)
