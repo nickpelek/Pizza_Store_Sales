@@ -1,1 +1,1 @@
-# Pizza-store-sales-project
+# Pizza store sales project
