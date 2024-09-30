@@ -10,3 +10,12 @@ Insights and recommendations will be provided by answering some key questions, s
 - Compared to store's bestselling pizzas, which ones are less popular?
 - How much revenue did the pizza store make in 2015?
 - Can we indentify any seasonality in revenue?
+
+
+##Table of contents
+-
+-
+-
+-
+
+## Data Structure
