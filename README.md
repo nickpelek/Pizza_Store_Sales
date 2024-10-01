@@ -53,7 +53,7 @@ END) AS hour_performance FROM orders
 GROUP BY hours
 ORDER BY hours;
 ```
-> Store's peak hours are:<br>
+> Store's **peak hours** are:<br>
 > **1) 12:00 p.m.<br>
 > 2) 13:00 p.m.<br>
 > 3) 17:00 p.m.<br>
@@ -61,7 +61,13 @@ ORDER BY hours;
 > 5) 19:00 p.m.**
 
 #### -How many pizzas are typically in an order? 
->
+```sql
+WITH avg_pizzas AS
+	(SELECT order_id, SUM(quantity) AS total_pizzas FROM order_details
+	GROUP BY order_id)
+SELECT ROUND(AVG(total_pizzas),0) AS pizzas_per_order FROM avg_pizzas;
+```
+> There are 2 pizzas on average in every order
 #### -Which are the store's top 3 bestselling pizzas?
 >
 #### -Compared to store's bestselling pizzas, which ones are less popular?
