@@ -33,6 +33,21 @@ Pizza store sales database structure consists of four tables: *orders*, *order_d
 ## Data Analysis Process (*SQL Queries*)
 > In this section we'll break down the project questions with SQL queries to find some useful insights.
 #### -How many orders does the store have on average each day?
+> 
+
+#### -Which are the peak hours of the store?
+>
+
+#### -How many pizzas are typically in an order? 
+>
+#### -Which are the store's top 3 bestselling pizzas?
+>
+#### -Compared to store's bestselling pizzas, which ones are less popular?
+>
+#### -How much revenue did the pizza store make in 2015?
+>
+#### -Can we indentify any seasonality in revenue?
+> 
 
 ## Project Summary
 -
