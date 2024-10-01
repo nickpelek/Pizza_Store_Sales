@@ -30,3 +30,6 @@ Pizza store sales database structure consists of four tables: *orders*, *order_d
 ![imageedit_1_6745671806](https://github.com/user-attachments/assets/83721a4d-867e-4cad-8d7e-847aae42d131)
 
 
+## Data Analysis Process (*SQL Queries*)
+> In this section we'll break down the project questions with SQL queries to find some useful insights.
+#### -How many orders does the store have on average each day?
