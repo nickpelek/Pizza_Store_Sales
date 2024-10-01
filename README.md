@@ -33,7 +33,13 @@ Pizza store sales database structure consists of four tables: *orders*, *order_d
 ## Data Analysis Process (*SQL Queries*)
 > In this section we'll break down the project questions with SQL queries to find some useful insights.
 #### -How many orders does the store have on average each day?
-> 
+```sql
+WITH avg_orders AS(
+	SELECT DATE(date_time) AS days, COUNT(*) AS total_orders FROM orders
+	GROUP BY days)
+SELECT ROUND(AVG(total_orders),0) AS avg_orders_per_day FROM avg_orders;
+```
+> Pizza store has on average **60 orders per day**
 
 #### -Which are the peak hours of the store?
 >
