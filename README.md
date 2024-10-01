@@ -42,7 +42,23 @@ SELECT ROUND(AVG(total_orders),0) AS avg_orders_per_day FROM avg_orders;
 > Pizza store has on average **60 orders per day**
 
 #### -Which are the peak hours of the store?
->
+> *When total orders are: **< 1000 = Not peak hours , [1000, 2000] = Mid peak hours, > 2000 = Peak hours***
+```sql
+SELECT HOUR(date_time) AS hours, COUNT(order_id) AS total_orders,
+(CASE
+	WHEN COUNT(order_id) < 1000 THEN 'Not peak hour'
+    WHEN COUNT(order_id)  BETWEEN 1000 AND 2000 THEN 'Mid peak hour'
+    WHEN COUNT(order_id) > 2000 THEN 'Peak hour'
+END) AS hour_performance FROM orders
+GROUP BY hours
+ORDER BY hours;
+```
+> Store's peak hours are:<br>
+> **1) 12:00 p.m.<br>
+> 2) 13:00 p.m.<br>
+> 3) 17:00 p.m.<br>
+> 4) 18:00 p.m.<br>
+> 5) 19:00 p.m.**
 
 #### -How many pizzas are typically in an order? 
 >
