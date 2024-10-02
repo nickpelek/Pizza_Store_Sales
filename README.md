@@ -69,7 +69,20 @@ SELECT ROUND(AVG(total_pizzas),0) AS pizzas_per_order FROM avg_pizzas;
 ```
 > There are 2 pizzas on average in every order
 #### -Which are the store's top 3 bestselling pizzas?
->
+```sql
+SELECT pt.name, SUM(od.quantity) AS total_pizzas FROM pizza_types AS pt
+JOIN pizza AS p
+ON pt.pizza_type_id =  p.pizza_type_id
+JOIN order_details AS od
+ON od.pizza_id = p.pizza_id
+GROUP BY pt.name
+ORDER BY total_pizzas DESC
+LIMIT 3;
+```
+> Store's **top 3 bestsellers** are: <br>
+> 1) **The Classic Deluxe Pizza** (*with 2453 pizzas sold*)<br>
+> 2) **The Barbecue Chicken Pizza** (*with 2432 pizzas sold*)<br>
+> 3) **The Hawaiian Pizza** (*with 2422 pizzas sold*)
 #### -Compared to store's bestselling pizzas, which ones are less popular?
 >
 #### -How much revenue did the pizza store make in 2015?
