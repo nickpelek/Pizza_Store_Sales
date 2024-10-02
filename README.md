@@ -39,20 +39,24 @@ WITH avg_orders AS(
 	GROUP BY days)
 SELECT ROUND(AVG(total_orders),0) AS avg_orders_per_day FROM avg_orders;
 ```
+![query 1 (avg pizzas per day)](https://github.com/user-attachments/assets/9c1c23cd-397f-4afb-b818-28f078d3b571)
+
 > Pizza store has on average **60 orders per day**
 
 #### -Which are the peak hours of the store?
-> *When total orders are: **< 1000 = Not peak hours , [1000, 2000] = Mid peak hours, > 2000 = Peak hours***
+> *When total orders are: **< 1000 = Not peak hour , [1000, 2000] = Mid peak hour, > 2000 = Peak hour***
 ```sql
 SELECT HOUR(date_time) AS hours, COUNT(order_id) AS total_orders,
 (CASE
-	WHEN COUNT(order_id) < 1000 THEN 'Not peak hour'
+    WHEN COUNT(order_id) < 1000 THEN 'Not peak hour'
     WHEN COUNT(order_id)  BETWEEN 1000 AND 2000 THEN 'Mid peak hour'
     WHEN COUNT(order_id) > 2000 THEN 'Peak hour'
 END) AS hour_performance FROM orders
 GROUP BY hours
 ORDER BY hours;
 ```
+![query 2 (peak hours)](https://github.com/user-attachments/assets/aac2dd87-0b6f-4555-a21e-28f85b486857)
+
 > Store's **peak hours** are:<br>
 > **1) 12:00 p.m.<br>
 > 2) 13:00 p.m.<br>
@@ -67,6 +71,8 @@ WITH avg_pizzas AS
 	GROUP BY order_id)
 SELECT ROUND(AVG(total_pizzas),0) AS pizzas_per_order FROM avg_pizzas;
 ```
+![query 3 (avg pizzas per order)](https://github.com/user-attachments/assets/8f94e3cf-e73f-483c-a9c5-217c8beadd3d)
+
 > There are **2 pizzas** on average in every order
 #### -Which are the store's top 3 bestselling pizzas?
 ```sql
@@ -79,6 +85,8 @@ GROUP BY pt.name
 ORDER BY total_pizzas DESC
 LIMIT 3;
 ```
+![query 4 (3 top selling pizzas)](https://github.com/user-attachments/assets/0517195a-b1c2-4c3e-95a3-40b6c35d48a5)
+
 > Store's **top 3 bestsellers** are: <br>
 > 1) **The Classic Deluxe Pizza** (*with 2453 pizzas sold*)<br>
 > 2) **The Barbecue Chicken Pizza** (*with 2432 pizzas sold*)<br>
@@ -92,8 +100,9 @@ JOIN order_details AS od
 ON od.pizza_id = p.pizza_id
 GROUP BY pt.name
 ORDER BY total_pizzas;
-
 ```
+![query 5 (bottom selling pizzas)](https://github.com/user-attachments/assets/7736cef6-a7e9-4e2c-b84d-a51a1212f548)
+
 > Store's **less popular** pizzas are:<br>
 > 1) **The Brie Carre Pizza** (*with 490 pizzas sold*)
 > 2) **The Mediterranean Pizza** (*with 934 pizzas sold*)
@@ -107,8 +116,9 @@ ON o.order_id = od.order_id
 JOIN pizza AS p
 ON od.pizza_id = p.pizza_id
 GROUP BY year_2015;
-
 ```
+![query 6 (2015 revenue)](https://github.com/user-attachments/assets/c55ac53d-4833-4b9a-8648-c6e02af8ae56)
+
 > Store's **revenue** in 2015 was **817.860**
 #### -Can we indentify any seasonality in revenue?
 ```sql
@@ -120,6 +130,8 @@ ON od.pizza_id = p.pizza_id
 GROUP BY months;
 
 ```
+![query 7 (revenue seasonality)](https://github.com/user-attachments/assets/013b5656-ca34-424c-9003-21ba6f3f3e3c)
+
 > Seasonality starts **from *spring* till the end of the *summer***, where revenue gets higher than usual (with the exceptions of **January & November**).
 
 ## Project Summary
