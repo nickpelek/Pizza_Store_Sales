@@ -109,7 +109,7 @@ ON od.pizza_id = p.pizza_id
 GROUP BY year_2015;
 
 ```
-> Store's revenue in 2015 was 817.860
+> Store's **revenue** in 2015 was **817.860**
 #### -Can we indentify any seasonality in revenue?
 ```sql
 SELECT MONTHNAME(o.date_time) AS months, ROUND(SUM(p.price * od.quantity),0) AS revenue FROM orders AS o
@@ -120,7 +120,7 @@ ON od.pizza_id = p.pizza_id
 GROUP BY months;
 
 ```
-> 
+> Seasonality starts **from *spring* till the end of the *summer***, where revenue gets higher than usual (with the exceptions of **January & November**).
 
 ## Project Summary
 -
