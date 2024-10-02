@@ -67,12 +67,12 @@ WITH avg_pizzas AS
 	GROUP BY order_id)
 SELECT ROUND(AVG(total_pizzas),0) AS pizzas_per_order FROM avg_pizzas;
 ```
-> There are 2 pizzas on average in every order
+> There are **2 pizzas** on average in every order
 #### -Which are the store's top 3 bestselling pizzas?
 ```sql
 SELECT pt.name, SUM(od.quantity) AS total_pizzas FROM pizza_types AS pt
 JOIN pizza AS p
-ON pt.pizza_type_id =  p.pizza_type_id
+ON pt.pizza_type_id = p.pizza_type_id
 JOIN order_details AS od
 ON od.pizza_id = p.pizza_id
 GROUP BY pt.name
@@ -84,10 +84,42 @@ LIMIT 3;
 > 2) **The Barbecue Chicken Pizza** (*with 2432 pizzas sold*)<br>
 > 3) **The Hawaiian Pizza** (*with 2422 pizzas sold*)
 #### -Compared to store's bestselling pizzas, which ones are less popular?
->
+```sql
+SELECT pt.name, SUM(od.quantity) AS total_pizzas FROM pizza_types AS pt
+JOIN pizza AS p
+ON pt.pizza_type_id = p.pizza_type_id
+JOIN order_details AS od
+ON od.pizza_id = p.pizza_id
+GROUP BY pt.name
+ORDER BY total_pizzas;
+
+```
+> Store's **less popular** pizzas are:<br>
+> 1) **The Brie Carre Pizza** (*with 490 pizzas sold*)
+> 2) **The Mediterranean Pizza** (*with 934 pizzas sold*)
+> 3) **The Calabrese Pizza** (*with 937 pizzas sold*)
+									   
 #### -How much revenue did the pizza store make in 2015?
->
+```sql
+SELECT YEAR(o.date_time) AS year_2015, ROUND(SUM(p.price * od.quantity),0) AS revenue FROM orders AS o
+JOIN order_details AS od
+ON o.order_id = od.order_id
+JOIN pizza AS p
+ON od.pizza_id = p.pizza_id
+GROUP BY year_2015;
+
+```
+> Store's revenue in 2015 was 817.860
 #### -Can we indentify any seasonality in revenue?
+```sql
+SELECT MONTHNAME(o.date_time) AS months, ROUND(SUM(p.price * od.quantity),0) AS revenue FROM orders AS o
+JOIN order_details AS od
+ON o.order_id = od.order_id
+JOIN pizza AS p
+ON od.pizza_id = p.pizza_id
+GROUP BY months;
+
+```
 > 
 
 ## Project Summary
