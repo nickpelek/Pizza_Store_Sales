@@ -132,7 +132,7 @@ GROUP BY months;
 ```
 ![query 7 (revenue seasonality)](https://github.com/user-attachments/assets/013b5656-ca34-424c-9003-21ba6f3f3e3c)
 
-> Seasonality starts **from *spring* till the end of the *summer***, where revenue gets higher than usual (with the exceptions of **January & November**).
+> Seasonality in revenue starts **from *spring* till the end of the *summer***, where revenue gets higher than usual (with the exceptions of **January & November**).
 
 ## Project Summary
 > Moving on to the **summary** of this project, here are some **key points** of it:
@@ -141,8 +141,8 @@ GROUP BY months;
 - On *average*, there are **2 pizzas** per order 
 - The store's **best-selling** pizzas are: ***1) The Classic Deluxe Pizza (with 2453 pizzas sold)**, **2) The Barbecue Chicken Pizza (with 2432 pizzas sold)**, **3) The Hawaiian Pizza (with 2422 pizzas sold)***. While store's **less popular** pizzas are: ***1) The Brie Carre Pizza (with 490 pizzas sold)**, **2) The Mediterranean Pizza (with 934 pizzas sold)**, **3) The Calabrese Pizza (with 937 pizzas sold)***
 - The store generated ***$817,860*** in pizza sales during the year *2015*.
--
--
+- The store experiences **revenue increases** during the ***spring*** and ***summer*** months, with the exception of *January* and *November*.
+
 ![Pizza sales Dashboard](https://github.com/user-attachments/assets/0baa8bbf-7996-4566-84b6-c5a85d6111fb)
 
 ## Recommendations
