@@ -58,11 +58,11 @@ ORDER BY hours;
 ![query 2 (peak hours)](https://github.com/user-attachments/assets/aac2dd87-0b6f-4555-a21e-28f85b486857)
 
 > Store's **peak hours** are:<br>
-> **1) 12:00 p.m.<br>
-> 2) 13:00 p.m.<br>
-> 3) 17:00 p.m.<br>
-> 4) 18:00 p.m.<br>
-> 5) 19:00 p.m.**
+>  **-12:00 (*2520 orders*) <br>
+>  -13:00 (*2455 orders*) <br>
+>  -17:00 (*2336 orders*) <br>
+>  -18:00 (*2399 orders*) <br>
+>  -19:00 (*2009 orders*)**
 
 #### -How many pizzas are typically in an order? 
 ```sql
