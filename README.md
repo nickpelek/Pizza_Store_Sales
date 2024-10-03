@@ -149,7 +149,8 @@ GROUP BY months;
 - Implement ***promotions*** or ***special offers*** during store hours with less orders to **attract more customers**.
 - Utilize **social media platforms** to promote ***new pizzas***, ***special offers*** and engage with customers.
 - Implement a **loyalty program** to reward repeat customers and encourage them to return.
--
+- Ensure **adequate staffing** during peak hours to handle increased customer demand and maintain efficient service.
+- Consider adding a **special offer** or **discount** to the **less popular** pizzas to boost their sales. If there aren’t any positive signs, consider **excluding** them from store’s menu. 
 
 ----
 💻📊📈😄
