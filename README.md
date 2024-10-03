@@ -135,12 +135,15 @@ GROUP BY months;
 > Seasonality starts **from *spring* till the end of the *summer***, where revenue gets higher than usual (with the exceptions of **January & November**).
 
 ## Project Summary
+> Moving on to the **summary** of this project, here are some **key points** of it:
+
+- The Pizza store has on average 60 orders per day, while the most orders (***store's peak hours*** 🕐) occur at: ***12:00**, **13:00**, **17:00**, **18:00**, **19:00***
+- On *average*, there are **2 pizzas** per order 
+- The store's **best-selling** pizzas are: ***1) The Classic Deluxe Pizza (with 2453 pizzas sold)**, **2) The Barbecue Chicken Pizza (with 2432 pizzas sold)**, **3) The Hawaiian Pizza (with 2422 pizzas sold)***. While store's **less popular** pizzas are: ***1) The Brie Carre Pizza (with 490 pizzas sold)**, **2) The Mediterranean Pizza (with 934 pizzas sold)**, **3) The Calabrese Pizza (with 937 pizzas sold)***
+- The store generated ***$817,860*** in pizza sales during the year *2015*.
 -
 -
--
--
--
--
+![Pizza sales Dashboard](https://github.com/user-attachments/assets/0baa8bbf-7996-4566-84b6-c5a85d6111fb)
 
 ## Recommendations
 -
