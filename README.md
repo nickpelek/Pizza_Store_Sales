@@ -132,7 +132,7 @@ GROUP BY months;
 ```
 ![query 7 (revenue seasonality)](https://github.com/user-attachments/assets/013b5656-ca34-424c-9003-21ba6f3f3e3c)
 
-> Seasonality in revenue starts **from *spring* till the end of the *summer***, where revenue gets higher than usual (with the exceptions of **January & November**).
+> Seasonality in revenue starts **from *spring* till the end of the *summer***, where revenue gets higher (with the exceptions of **January & November**).
 
 ## Project Summary
 > Moving on to the **summary** of this project, here are some **key points** of it:
