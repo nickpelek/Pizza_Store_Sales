@@ -146,9 +146,9 @@ GROUP BY months;
 ![Pizza sales Dashboard](https://github.com/user-attachments/assets/0baa8bbf-7996-4566-84b6-c5a85d6111fb)
 
 ## Recommendations
-- Implement **promotions** or **special offers** during store hours with less orders to **attract more customers**.
--
--
+- Implement ***promotions*** or ***special offers*** during store hours with less orders to **attract more customers**.
+- Utilize **social media platforms** to promote ***new pizzas***, ***special offers*** and engage with customers.
+- Implement a **loyalty program** to reward repeat customers and encourage them to return.
 -
 
 ----
