@@ -152,7 +152,7 @@ GROUP BY months;
 - Add **seasonal** pizzas to the menu for changing tastes and preferences throughout the year
 - Ensure **adequate staffing** during peak hours to handle increased customer demand and maintain efficient service.
 - Consider adding a **special offer** or **discount** to the **less popular** pizzas to boost their sales. If there aren’t any positive signs, consider **excluding** them from store’s menu.
-- Actively seek **customer feedback**, from ***comments*** and ***ratings*** through food delivery apps to identify areas for improvement.
+- Actively seek **customer feedback**, from ***comments*** and ***ratings*** through web or food delivery apps to identify areas for improvement.
 
 ----
 💻📊📈😄
