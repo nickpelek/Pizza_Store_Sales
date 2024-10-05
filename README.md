@@ -135,7 +135,7 @@ GROUP BY months;
 > Seasonality in revenue starts **from *spring* till the end of the *summer***, where revenue gets higher (with the exceptions of **January & November**).
 
 ## Project Summary
-> Moving on to the **summary** of this project, here are some **key points** of it:
+> Moving on to the **summary** of this project, here are the **key points** of it:
 
 - The Pizza store has on average 60 orders per day, while the most orders (***store's peak hours*** 🕐) occur at: ***12:00**, **13:00**, **17:00**, **18:00**, **19:00***
 - On *average*, there are **2 pizzas** per order 
