@@ -144,7 +144,7 @@ GROUP BY months;
 - The store experiences **revenue increases** during the ***spring*** and ***summer*** months, with the exception of *January* and *November*.
 
 ![Pizza sales Dashboard](https://github.com/user-attachments/assets/0baa8bbf-7996-4566-84b6-c5a85d6111fb)
-> ***Click to see the*** [***Dashboard***](https://public.tableau.com/app/profile/nickpelek/viz/PizzaStoreSalesProject/Dashboard1)
+> ***Click to see the interactive*** [***Dashboard***](https://public.tableau.com/app/profile/nickpelek/viz/PizzaStoreSalesProject/Dashboard1)
 ## Recommendations
 - Implement ***promotions*** or ***special offers*** during store hours with less orders to **attract more customers**.
 - Utilize **social media platforms** to promote ***new pizzas***, ***special offers*** and ***engage*** with customers.
