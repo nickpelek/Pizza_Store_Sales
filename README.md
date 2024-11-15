@@ -26,7 +26,7 @@ Insights and recommendations will be provided by answering some key questions, s
 - **Tableau Public** (*Creating Reports*)
 > ***You can see the interactive Tableau Public Dashboard* [here](https://public.tableau.com/app/profile/nickpelek/viz/PizzaStoreSalesProject/Dashboard1)**  
 ## Data Structure
-Pizza store sales database structure consists of four tables: *orders*, *order_details*, *pizza* and *pizza_types* with row counts **21.350**, **48.620**, **96** and **32** respectively.
+Pizza store sales database structure consists of four tables: ***orders***, ***order_details***, ***pizza*** and ***pizza_types*** with row counts **21.350**, **48.620**, **96** and **32** respectively.
 ![imageedit_1_6745671806](https://github.com/user-attachments/assets/83721a4d-867e-4cad-8d7e-847aae42d131)
 
 
